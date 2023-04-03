@@ -49,8 +49,8 @@ function App() {
 
     if(symbol==="+")
     {
-      let number1=parseFloat(inputFirst);
-      let number2=parseFloat(inputSecond);
+      let number1=parseFloat(inputFirst)||0;
+      let number2=parseFloat(inputSecond)||0;
       let number=number1+number2;
       setInputFirst(`${number}`);
       setSymbol(e.target.value);
@@ -58,8 +58,8 @@ function App() {
     }
     else if(symbol==="-")
     {
-      let number1=parseFloat(inputFirst);
-      let number2=parseFloat(inputSecond);
+      let number1=parseFloat(inputFirst)||0;
+      let number2=parseFloat(inputSecond)||0;
       let number=number1-number2;
       setInputFirst(`${number}`);
       setSymbol(e.target.value);
@@ -68,8 +68,8 @@ function App() {
     else if(symbol==="*")
     {
      
-        let number1=parseFloat(inputFirst);
-        let number2=parseFloat(inputSecond);
+        let number1=parseFloat(inputFirst)||0;
+        let number2=parseFloat(inputSecond)||0;
         let number=number1*number2;
         setInputFirst(`${number}`);
         setSymbol(e.target.value);
@@ -79,8 +79,8 @@ function App() {
     else if(symbol==="/")
     {
      
-        let number1=parseFloat(inputFirst);
-        let number2=parseFloat(inputSecond);
+        let number1=parseFloat(inputFirst)||0;
+        let number2=parseFloat(inputSecond)||0;
         let number=number1/number2;
         setInputFirst(`${number}`);
         setSymbol(e.target.value);
@@ -97,8 +97,8 @@ function App() {
    const calculate=()=>{
       if(symbol==="+")
       {
-        let number1=parseFloat(inputFirst);
-        let number2=parseFloat(inputSecond);
+        let number1=parseFloat(inputFirst)||0;
+        let number2=parseFloat(inputSecond)||0;
         let number=number1+number2;
         setInputFirst(`${number}`);
         setSymbol("");
@@ -106,8 +106,8 @@ function App() {
       }
       else if(symbol==="-")
       {
-        let number1=parseFloat(inputFirst);
-        let number2=parseFloat(inputSecond);
+        let number1=parseFloat(inputFirst)||0;
+        let number2=parseFloat(inputSecond)||0;
         let number=number1-number2;
         setInputFirst(`${number}`);
         setSymbol("");
@@ -116,8 +116,8 @@ function App() {
       else if(symbol==="*")
       {
        
-          let number1=parseFloat(inputFirst);
-          let number2=parseFloat(inputSecond);
+          let number1=parseFloat(inputFirst)||0;
+          let number2=parseFloat(inputSecond)||0;
           let number=number1*number2;
           setInputFirst(`${number}`);
           setSymbol("");
@@ -127,8 +127,8 @@ function App() {
       else if(symbol==="/")
       {
        
-          let number1=parseFloat(inputFirst);
-          let number2=parseFloat(inputSecond);
+          let number1=parseFloat(inputFirst)||0;
+          let number2=parseFloat(inputSecond)||0;
           let number=number1/number2;
           setInputFirst(`${number}`);
           setSymbol("");

@@ -10,7 +10,7 @@
 }
 
 .App>div{
-  width: 28%;
+  width: 40%;
   height: 90vh;
   border: 2px solid lavenderblush;
 }
@@ -109,4 +109,21 @@
 
 .functions>div:hover{
   cursor: pointer;
+}
+
+
+
+@media  screen and (max-width:450px){
+
+ .App>div{
+  width: 80%;
+ }
+
+}
+
+@media  screen and (min-width:451px) and(max-width:700px)
+{
+  .App>div{
+    width: 80%;
+  }
 }
