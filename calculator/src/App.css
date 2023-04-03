@@ -1,0 +1,112 @@
+.App{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color:rgb(198, 134, 214);
+  background-image: url("https://images.unsplash.com/photo-1570804439979-660b22341c20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmVhdXRpZnVsJTIwbmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.App>div{
+  width: 28%;
+  height: 90vh;
+  border: 2px solid lavenderblush;
+}
+.input_box{
+  width: 100%;
+  height: 50%;
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  align-items:end;
+  justify-content: end;
+}
+.input1{
+  font-size: 45px;
+}
+.input2{
+  font-size: 45px;
+}
+
+.symbol{
+  font-size: 45px;
+  display: flex;
+  align-self: flex-start;
+  position: sticky;
+  
+}
+.keyboard{
+  width: 100%;
+  height: 50%;
+  border-top: 1px solid black;
+  display: flex;
+}
+.keyboard>div:nth-child(1){
+  width: 75%;
+  height: 100%;
+/* border-right: 1px solid black; */
+}
+.functions{
+  width: 25%;
+  height: 100%;
+}
+.numbers{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.numbers>div{
+  width: calc(100/3%);
+  height: calc(100/4%);
+  /* border: 1px solid black; */
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: gray;
+  color: white;
+}
+.numbers>div>button{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: gray;
+  color: white;
+}
+.numbers>div>button:hover{
+  cursor: pointer;
+}
+.functions>div{
+  width: 100%;
+  height:20%;
+  /* border: 1px solid black; */
+  border-left: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background-color: lightgray;
+  color: black;
+}
+.functions>div>button{
+  width: 100%;
+  height:100%;
+  /* border: 1px solid black; */
+  /* border-left: none; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  background-color: lightgray;
+  color: black;
+
+}
+
+.functions>div:hover{
+  cursor: pointer;
+}
